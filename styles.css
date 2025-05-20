@@ -1,0 +1,107 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f4f7fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: 600;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .tree {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .node {
+            display: inline-block;
+            background: #ffffff;
+            padding: 10px 15px;
+            border-radius: 12px;
+            margin: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .node:hover {
+            transform: scale(1.05);
+        }
+
+        .connector {
+            height: 20px;
+            border-left: 2px solid #888;
+            margin: 0 auto;
+        }
+
+        .children {
+            display: flex;
+            justify-content: center;
+        }
+
+        .members-list {
+            margin-top: 40px;
+            max-width: 600px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .members-list h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .members-list ul {
+            padding-left: 20px;
+        }
+
+        .members-list li {
+            margin: 6px 0;
+        }

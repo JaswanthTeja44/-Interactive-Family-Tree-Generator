@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Family Tree Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Interactive Family Tree Generator</h1>
+    <div class="form-container">
+        <label for="name">Person's Name</label>
+        <input type="text" id="name" placeholder="e.g. John Doe">
+
+        <label for="relationType">Relation Type</label>
+        <select id="relationType" onchange="updateSubRelation()">
+            <option value="">-- Select Relation --</option>
+            <option value="parent">Parent</option>
+            <option value="child">Child</option>
+        </select>
+
+        <label for="relationSubType">Specific Relation</label>
+        <select id="relationSubType">
+            <option value="">-- Select Specific Relation --</option>
+        </select>
+
+        <label for="relatedTo">Related To (Name)</label>
+        <input type="text" id="relatedTo" placeholder="e.g. Jane Doe">
+
+        <button onclick="addMember()">Add Member</button>
+    </div>
+
+    <div class="tree" id="familyTree"></div>
+
+    <div class="members-list">
+        <h2>Family Members</h2>
+        <ul id="membersDisplay"></ul>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
